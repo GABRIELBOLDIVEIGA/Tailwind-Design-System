@@ -2,13 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-Regular.woff2') format('woff2'),
+  url('../fonts/Mulish-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  font-family: "Mulish", sans-serif;
+}
+
 @layer base {
   :root {
     /* Colors */
     --primary: 45, 91, 255;
     --secondary: 98, 132, 253;
     --tertiary: 150, 173, 255;
-    --quarternary: 236, 240, 255;
+    --quaternary: 150, 213, 82;
+    /* --quaternary: 236, 240, 255; */
 
     --hover: 27, 74, 240;
     --click: 0, 46, 208;
@@ -59,12 +73,19 @@
     --border-radius-sm: 4px;
     --border-radius-md: 8px;
     --border-radius-lg: 16px;
+
+    /* Font Size */
+    --font-xs: 12px;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 20px;
   }
 
   .theme-violet {
     --primary: 175, 75, 254;
     --secondary: 190, 116, 249;
     --tertiary: 226, 189, 255;
-    --quarternary: 245, 232, 255;
+    --quaternary: 245, 232, 255;
   }
 }
