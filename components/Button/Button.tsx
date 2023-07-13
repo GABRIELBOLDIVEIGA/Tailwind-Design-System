@@ -17,7 +17,6 @@ function getVariant(variant: ButtonProsp['variant'], disabled: ButtonProsp['disa
 }
 
 const Button = ({ variant = 'primary', children, className, disabled, ...rest }: ButtonProsp) => {
-
   const Btn = (classes: string) => {
     return <button
       className={`
@@ -31,7 +30,6 @@ const Button = ({ variant = 'primary', children, className, disabled, ...rest }:
       {children}
     </button>
   }
-
   return Btn(disabled ? 'bg-disabled text-disabled' : 'bg-primary text-white')
 }
 
