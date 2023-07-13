@@ -6,7 +6,7 @@ export type ButtonProsp = {
 const Button = ({ children, className }: ButtonProsp) => {
   return <button
     className={`
-    bg-primary rounded-[8px] px-[32px] py-[12px] text-white 
+      bg-primary rounded-lg px-6 py-2 text-white 
     ${className}
     `}
   >
